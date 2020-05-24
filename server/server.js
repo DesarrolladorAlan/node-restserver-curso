@@ -43,13 +43,3 @@ mongoose.connect(process.env.URLDB, {
 app.listen(process.env.PORT, () => {
     console.log('Escuchando puerto: ', process.env.PORT);
 });
-
-
-// const MongoClient = require('mongodb').MongoClient;
-// const uri = "mongodb+srv://destroyer:<password>@cluster0-pvnkv.mongodb.net/test?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
